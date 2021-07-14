@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ClebyFrancisco/DesafioFinal/issues"
   },
-  "homepage": "https://github.com/ClebyFrancisco/DesafioFinal#readme"
+  "homepage": "https://github.com/ClebyFrancisco/DesafioFinal#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
