@@ -1,7 +1,7 @@
 import { Router } from "express";
-import usersController from '../controllers/usersController'
+import AuthController from '../controllers/authController'
 
 const routes = Router()
-const UsersController = new usersController()
+const authController = new AuthController()
 
-routes.post('/cadastro', UsersController.user)
+routes.post('/register', authController.user)
