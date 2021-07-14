@@ -1,6 +1,11 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost/users', { useMongoClient: true })
 mongoose.Promise = global.Promise
+mongoose.connect('mongodb://localhost/users', { 
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+  })
+
 
 module.exports = mongoose
