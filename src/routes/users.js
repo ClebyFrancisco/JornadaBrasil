@@ -11,5 +11,6 @@ routes.get('/project', authMiddleware, projectController.project)
 routes.post('/register', authController.register)
 routes.post('/authenticate', authController.authenticate)
 routes.post('/forgotPassword', authController.forgotPassword)
+routes.post('/resetPassword', authController.resetPassword)
 
 export default routes
