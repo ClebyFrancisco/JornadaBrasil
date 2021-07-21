@@ -126,7 +126,6 @@ export default class AuthController {
       res.send()
 
     } catch (err) {
-      console.log(err)
       return res.status(400).send({ error: 'Cannot reset password, try again' })
     }
   }
