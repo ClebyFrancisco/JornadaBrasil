@@ -1,6 +1,6 @@
 import { Router } from 'express'
-import AuthController from '../controllers/authController'
-import ProjectController from '../controllers/projectController'
+import AuthController from '../app/controllers/authController'
+import ProjectController from '../app/controllers/projectController'
 
 const routes = Router()
 const authController = new AuthController()
@@ -12,4 +12,4 @@ routes.post('/register', authController.register)
 routes.post('/authenticate', authController.authenticate)
 routes.post('/forgotPassword', authController.forgotPassword)
 
-export default routes;
+export default routes
