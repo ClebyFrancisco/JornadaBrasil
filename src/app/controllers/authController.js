@@ -72,12 +72,23 @@ export default class AuthController {
         }
       })
 
-      mailer.sendMail({
-        to: email,
-        from: 'jornadabrasil37@gmail.com',
-        template:''
-      })
+      mailer.sendMail(
+        {
+          to: email,
+          from: 'jornadabrasil37@gmail.com',
+          template: 'auth/forgotPassword',
+          context: { token }
+        },
+        err => {
+          if (err) {
+            return res
+              .status(400)
+              .send({ error: 'Cannot send forgot password email' })
+          }
 
+          return res.send()
+        }
+      )
     } catch (err) {
       return res
         .status(400)
