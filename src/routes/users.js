@@ -5,7 +5,7 @@ import ProjectController from '../app/controllers/projectController'
 const routes = Router()
 const authController = new AuthController()
 const projectController = new ProjectController()
-const authMiddleware = require('../middlewares/auth')
+const authMiddleware = require('../app/middlewares/auth')
 
 routes.get('/project', authMiddleware, projectController.project)
 routes.post('/register', authController.register)
