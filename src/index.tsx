@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './pages/App';
-import {
-  Container
-} from "@material-ui/core";
 import reportWebVitals from './reportWebVitals';
+import { Container } from "@material-ui/core";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>

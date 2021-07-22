@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuItems } from './MenuItem';
-import { Button } from '../Button'
+import { Button } from '../Button/Button';
 import './Header.css';
 
 class Header extends React.Component {
