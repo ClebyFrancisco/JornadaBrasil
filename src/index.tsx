@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import App from './pages/App';
+import {
+  Container
+} from "@material-ui/core";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
