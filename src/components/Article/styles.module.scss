@@ -1,0 +1,19 @@
+.ArticleContainer {
+    background: no-repeat center;
+    background-size: cover;
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    p{
+        margin: auto;
+        text-align: center;
+        color: white;
+        font-family: 'Contrail One', cursive;
+        text-transform: uppercase;
+        font-size: 28px;
+
+    }
+}

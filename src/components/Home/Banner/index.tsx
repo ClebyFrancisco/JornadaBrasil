@@ -25,7 +25,7 @@ const items = [
   }
 ];
 
-const Banner = (props) => {
+const Banner = (props:any) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -41,7 +41,7 @@ const Banner = (props) => {
     setActiveIndex(nextIndex);
   }
 
-  const goToIndex = (newIndex) => {
+  const goToIndex = (newIndex:any) => {
     if (animating) return;
     setActiveIndex(newIndex);
   }
