@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "../Header/Header";
 
 
-const Layout: React.FC<{title:string}>  = ({ children, title }) =>{
+const Layout: React.FC<{title:string,  crossorigin:string}>  = ({ children, title}) =>{
   return (
     <>
      <Head>

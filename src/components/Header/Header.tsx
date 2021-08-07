@@ -18,10 +18,13 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md" className={styles.navBar}>
+      <Navbar color="light" light  expand="md"  className={styles.navBar}>
         <NavbarBrand href="/"><img src={logo.src} alt="Logo - Home" /></NavbarBrand>
-      
-          <Nav /* className="mr-auto" */ navbar className={styles.nav}>
+
+          <div className={styles.nav}>
+
+          
+         {/*  <Nav className="mr-auto"  navbar > */}
             <NavItem>
               <NavLink className={styles.navLinks} href="/roteiros">Roteiros</NavLink>
             </NavItem>
@@ -50,7 +53,8 @@ const Header = () => {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-          </Nav>
+        {/*   </Nav> */}
+          </div>
         
       </Navbar>
     </div>
