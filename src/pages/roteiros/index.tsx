@@ -6,7 +6,8 @@ import imagem4 from '../../../public/images/article/imagem4.png'
 const Roteiros  = () =>{
     return(
         <Layout title="Jornada Brasil - Roteiros">
-           <Article imagem={imagem4.src} title={"Roteiros"}/> 
+           <Article imagem={imagem4.src} title={"Roteiros"}/>
+           
             
         </Layout>
     )
