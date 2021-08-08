@@ -1,0 +1,57 @@
+.footer {
+    background: url(../../../public/footer/backFooter.png)  no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height:150px;
+    padding: 10px;
+    font-family: 'Contrail One', cursive;
+    font-size: 14px;
+
+    .footerContainer{
+        display: flex;
+        width: 80%;
+        margin: 10px auto;
+        
+    }
+    .footerLinks{
+        display: flex;
+
+        .footerInfo{
+            display: flex;
+            color: white;
+            flex-direction: column;
+            margin-right: 30px;
+        }
+
+    }
+    .footerSocial{
+        color:white;
+        display: flex;
+        text-align: right;
+        justify-content: right;
+        width: 60%;
+        padding-left: 50%;
+        i {
+            margin: 15px;
+        }
+
+    }
+    .Autorais {
+        width: 75%;
+        border-top: 1px solid rgb(151, 151, 151);
+        margin:10px auto;
+        text-align: right;
+        color: white;
+        font-size: 12px;
+    }
+    
+}
+@media only screen and (max-width: 850px){
+    .footerInfo{
+        width: 200px;
+        
+    }
+    .footerSocial{
+        width: 20px;
+    }
+}

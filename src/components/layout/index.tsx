@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import Head from "next/head";
 import Header from "../Header/Header";
+import Footer from "../Footer";
 
 
 const Layout: React.FC<{title:string}>  = ({ children, title}) =>{
@@ -16,10 +17,12 @@ const Layout: React.FC<{title:string}>  = ({ children, title}) =>{
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
       <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet" />
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossOrigin="anonymous" />
     </Head>
       <Header />
       <main>{children}</main>
-      
+      <Footer />
     </>
   )
 }
