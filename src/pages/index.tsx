@@ -5,9 +5,11 @@ import Banner from '../components/Home/Banner'
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.scss';
 import imagem1 from '../../public/images/article/imagem1.jpg';
-import imagem2 from '../../public/images/article/imagem2.png'
+import imagem2 from '../../public/images/article/imagem2.png';
+import imagem3 from '../../public/images/article/ImageAmazonia01.png'
 import Nav from '../components/Home/Nav';
 import mapaBrasil from '../../public/images/mapaBrasil.png';
+import EmAlta from '../components/Roteiros/EmAlta'
 
 export default function Home() {
   return (
@@ -19,6 +21,9 @@ export default function Home() {
         
       </div>
       <Article imagem={imagem2.src} title={"conheça +"}/>
+      <Article imagem={imagem3.src} title={"Roteiros em Alta"}/>
+      <div className={styles.emAlta}></div>
+      <EmAlta />
       
       <h1> welcome Home</h1>
     </Layout>

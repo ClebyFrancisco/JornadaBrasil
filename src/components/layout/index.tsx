@@ -22,7 +22,7 @@ const Layout: React.FC<{title:string}>  = ({ children, title}) =>{
     </Head>
       <Header />
       <main>{children}</main>
-      <Footer />
+      <Footer /> 
     </>
   )
 }
