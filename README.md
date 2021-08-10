@@ -1,3 +1,12 @@
+# Introdução
+
+O tema foi escolhido sendo levado em consideração um problema relacionado ao nosso país: Desvalorização Cultural.
+É muito comum ouvir pessoas superestimando tudo o que vêm de fora e ignorando toda a riqueza e beleza que nossa terra oferece de braços abertos.
+Mas como explorar e transformar a cultura de um país tão grande numa vitrine virtual?
+Então levantamos a primeira pergunta: O que é "Cultura?"
+Depois de uma conversa, definimos que cultura, além de agregar muitas áreas, está relacionada a experiências que cada um tem com diferentes temas. E como poderíamos gerar mais experiências e incentivar as pessoas a buscarem por tal coisa? Através de viagens!
+Então o ato de Viajar se tornou o nosso produto. Assim nasceu o Jornada Brasil!
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
