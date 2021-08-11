@@ -1,0 +1,28 @@
+.ImageInfoRegioes {
+    background: no-repeat center;
+    background-size: cover;
+    width: 550px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    top:-70px;
+
+}
+.TextInfoRegioes{
+    color: black;
+    h2{
+        font-family: 'Contrail One', cursive;
+        font-size: 32px;
+        
+    }
+    p{
+        font-size: 14px;
+      
+    }
+}
+.InfoRegioes {
+    display: flex;
+    width: 100vw;
+   padding: 20px;
+}

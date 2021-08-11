@@ -6,7 +6,7 @@ import BannerNordeste from "../../../../public/images/Nordeste/banner.jpg";
 const Nordeste  = () =>{
     return(
         <Layout title="Jornada Brasil - Nordeste">
-            <CapaRegioes imagem={BannerNordeste.src} />
+            <CapaRegioes imagem={BannerNordeste.src} height="250"/>
             <h1> Conheça o Nordeste do Brasil</h1>
         </Layout>
   )

@@ -6,7 +6,7 @@ import BannerCentroOeste from "../../../../public/images/CentroOeste/banner.jpg"
 const CentroOeste  = () =>{
     return(
         <Layout title="Jornada Brasil - Centro-Oeste">
-            <CapaRegioes imagem={BannerCentroOeste.src} />
+            <CapaRegioes imagem={BannerCentroOeste.src} height="250"/>
             <h1> Conheça o Centro-Oeste do Brasil</h1>
         </Layout>
   )
