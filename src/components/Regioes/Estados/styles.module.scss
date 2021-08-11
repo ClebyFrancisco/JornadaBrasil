@@ -1,0 +1,14 @@
+.Estados {
+    background: no-repeat center;
+    background-size: cover;
+    height: 200px;
+    width: 25vw;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ContainerEstado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

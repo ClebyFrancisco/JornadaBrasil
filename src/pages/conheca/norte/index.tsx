@@ -3,8 +3,27 @@ import CapaRegioes from "../../../components/Regioes/CapaRegioes";
 
 import BannerNorte from "../../../../public/images/Norte/banner.jpg";
 import PerfilNorte from "../../../../public/images/Norte/perfil.jpg";
+import Regiao1Norte from "../../../../public/images/Norte/regiao.jpg";
+import Regiao2Norte from "../../../../public/images/Norte/regiao2.jpg";
+import CulinariaNorte from "../../../../public/images/Norte/culinaria.jpg";
+import Culinaria2Norte from "../../../../public/images/Norte/culinaria2.jpg";
+import CulturaNorte from "../../../../public/images/Norte/cultura.jpg";
+import Cultura2Norte from "../../../../public/images/Norte/cultura2.jpg";
+
+
+import Acre from "../../../../public/images/estados/acre.png";
+import Amapa from "../../../../public/images/estados/amapa.png";
+import Amazonas from "../../../../public/images/estados/amazonas.png";
+import Para from "../../../../public/images/estados/para.png";
+import Roraima from "../../../../public/images/estados/roraima.png";
+import Rondonia from "../../../../public/images/estados/rondonia.png";
 
 import InfoRegioes from "../../../components/Regioes/InfoRegioes";
+import TitleSection from "../../../components/Regioes/TitleSection";
+import ArticleRegioes from "../../../components/Regioes/ArticleRegioes";
+import Article from "../../../components/Article";
+import ContainerEstado from "../../../components/Regioes/Estados/ContainerEstado";
+import Estados from "../../../components/Regioes/Estados";
 
 
 const Norte  = () =>{
@@ -23,6 +42,53 @@ const Norte  = () =>{
             exploração do turismo cresce a cada dia 
             com mais infra-estrutura para os turistas."
             />
+
+            <CapaRegioes imagem={Regiao1Norte.src} height="350" />  
+            <TitleSection titulo="Sobre a Região"  /> 
+            <ArticleRegioes 
+                text="A Região Norte tem uma cultura muito rica,
+                 influenciada fortemente pelas tribos indígenas 
+                 do Brasil, guarda muita história e é berço das 
+                 maiores riquezas naturais do nosso país.
+                É uma região pouco explorada, tanto por turistas 
+                de fora como de dentro do Brasil. Tem se uma ideia 
+                de que a região é “apenas floresta”, desconsiderando
+                 a cultura e toda a infraestrutura construída a partir 
+                 de uma vida em conjunto com o meio."
+                imagem={Regiao2Norte.src}   
+            />  
+            <CapaRegioes imagem={CulinariaNorte.src} height="350" /> 
+            <TitleSection titulo="Culinaria"  /> 
+            <ArticleRegioes 
+                text="Além das belas paisagens e passeios turísticos
+                 recheados de história, uma viagem à região Norte
+                  possibilita conhecer, também, a deliciosa culinária 
+                  típica. Com grande influência em sua cultura pelos 
+                  indígenas, os pratos são, em sua maioria, compostos 
+                  por peixes, frutas e ervas para temperos, como por 
+                  exemplo: Pato no tucupi, Gurijuba, Caruru, Tacacá..."
+                imagem={Culinaria2Norte.src}   
+            /> 
+            <CapaRegioes imagem={CulturaNorte.src} height="350" /> 
+            <TitleSection titulo="Cultura"  /> 
+            <ArticleRegioes 
+                text="Por ser uma região com uma população bastante 
+                miscigenada, o Norte possui grande diversidade de 
+                manifestações culturais, os seja, de costumes, crenças,
+                 festas populares, culinária, danças, e etc.As festividades
+                 do norte do Brasil são fortemente influenciadas pela cultura
+                  indígena, assim como a religiosidade cristã."
+                imagem={Cultura2Norte.src}   
+            /> 
+             <Article imagem={Regiao1Norte.src} title={"Estados"}/>
+             <ContainerEstado>
+                 <Estados imagem={Acre.src} />
+                 <Estados imagem={Amapa.src} />
+                 <Estados imagem={Amazonas.src} />
+                 <Estados imagem={Para.src} />
+                 <Estados imagem={Roraima.src} />
+                 <Estados imagem={Rondonia.src} />
+             </ContainerEstado>
             
         </Layout>
   )

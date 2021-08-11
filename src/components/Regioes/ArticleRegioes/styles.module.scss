@@ -1,0 +1,22 @@
+.cardImagem {
+    background: no-repeat center;
+    background-size: cover;
+    height: 250px;
+    width: 40vw;
+    border-radius: 10px;
+}
+.ArticleRegioes{
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+    .TextArticleRegioes{
+        width: 400px;
+        color:black;
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    
+
+}
