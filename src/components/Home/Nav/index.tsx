@@ -1,6 +1,7 @@
 import React from "react";
 import  Link from 'next/link';
 import styles from './styles.module.scss'
+import A from '../../../Banner/Banner1.jpg'
 
 
 const Nav = () =>{
