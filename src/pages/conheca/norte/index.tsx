@@ -17,6 +17,7 @@ import Amazonas from "../../../../public/images/estados/amazonas.png";
 import Para from "../../../../public/images/estados/para.png";
 import Roraima from "../../../../public/images/estados/roraima.png";
 import Rondonia from "../../../../public/images/estados/rondonia.png";
+import Tocantins from "../../../../public/images/estados/tocantins.png";
 
 import InfoRegioes from "../../../components/Regioes/InfoRegioes";
 import TitleSection from "../../../components/Regioes/TitleSection";
@@ -58,7 +59,7 @@ const Norte  = () =>{
                 imagem={Regiao2Norte.src}   
             />  
             <CapaRegioes imagem={CulinariaNorte.src} height="350" /> 
-            <TitleSection titulo="Culinaria"  /> 
+            <TitleSection titulo="Culinária"  /> 
             <ArticleRegioes 
                 text="Além das belas paisagens e passeios turísticos
                  recheados de história, uma viagem à região Norte
@@ -82,12 +83,15 @@ const Norte  = () =>{
             /> 
              <Article imagem={Regiao1Norte.src} title={"Estados"}/>
              <ContainerEstado>
-                 <Estados imagem={Acre.src} />
-                 <Estados imagem={Amapa.src} />
-                 <Estados imagem={Amazonas.src} />
-                 <Estados imagem={Para.src} />
-                 <Estados imagem={Roraima.src} />
-                 <Estados imagem={Rondonia.src} />
+                 <Estados imagem={Acre.src} title="Acre"/>
+                 <Estados imagem={Amapa.src} title="Amapa"/>
+                 <Estados imagem={Amazonas.src} title="Amazonas" />
+                 <Estados imagem={Para.src} title="Para" />
+                 <Estados imagem={Roraima.src} title="Roraima"/>
+                 <Estados imagem={Rondonia.src} title="Rondonia"/>
+                 <Estados imagem={Tocantins.src} title="Tocantins"/>
+                 
+                 
              </ContainerEstado>
             
         </Layout>
