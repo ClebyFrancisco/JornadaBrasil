@@ -15,8 +15,7 @@ const Layout: React.FC<{title:string}>  = ({ children, title}) =>{
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossOrigin="anonymous" async></script>
 
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
-     <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="preconnect" /> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/> 
 
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossOrigin="anonymous" />
     </Head>

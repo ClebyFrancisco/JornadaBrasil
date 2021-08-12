@@ -30,29 +30,29 @@ const Header = () => {
           
          {/*  <Nav className="mr-auto"  navbar > */}
             <NavItem>
-              <NavLink className={styles.navLinks} href="/roteiros">Roteiros</NavLink>
+              <NavLink className={styles.navLinks} href="/roteiros"  passHref>Roteiros</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className={styles.navLinks} href="/galeria">Galeria</NavLink>
+              <NavLink className={styles.navLinks} href="/galeria"  passHref>Galeria</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret className={styles.navLinks}>
                 Conheça +
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem href="/conheca/norte" className={styles.navLinks}>
+                <DropdownItem href="/conheca/norte" className={styles.navLinks}  passHref>
                   Norte
                 </DropdownItem>
-                <DropdownItem href="/conheca/nordeste" className={styles.navLinks}>
+                <DropdownItem href="/conheca/nordeste" className={styles.navLinks}  passHref>
                   Nordeste
                 </DropdownItem>
-                <DropdownItem href="/conheca/centro-oeste" className={styles.navLinks}>
+                <DropdownItem href="/conheca/centro-oeste" className={styles.navLinks}  passHref>
                   Centro-oeste
                 </DropdownItem>
-                <DropdownItem href="/conheca/sudeste" className={styles.navLinks}>
+                <DropdownItem href="/conheca/sudeste" className={styles.navLinks}  passHref>
                   Sudeste
                 </DropdownItem>
-                <DropdownItem href="/conheca/sul" className={styles.navLinks}>
+                <DropdownItem href="/conheca/sul" className={styles.navLinks}  passHref>
                   Sul
                 </DropdownItem>
               </DropdownMenu>

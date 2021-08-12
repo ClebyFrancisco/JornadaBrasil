@@ -8,20 +8,20 @@ const Footer = () =>{
             <div className={styles.footerContainer}>
                 <div className={styles.footerLinks}>
                 <div className={styles.footerInfo}>
-                    <Link href="#"><a>Sobre Nós</a></Link>
-                    <Link href="#"><a>Contato</a></Link>
-                    <Link href="#"><a>Termo de Uso</a></Link>
+                    <Link href="#" passHref><a>Sobre Nós</a></Link>
+                    <Link href="#"  passHref><a>Contato</a></Link>
+                    <Link href="#"  passHref><a>Termo de Uso</a></Link>
                 </div>
                 <div className={styles.footerInfo}>
-                    <Link href="#"><a>Perguntas Frequentes</a></Link>
-                    <Link href="#"><a>Politica de Privacidade</a></Link>
+                    <Link href="#"  passHref><a>Perguntas Frequentes</a></Link>
+                    <Link href="#"  passHref><a>Politica de Privacidade</a></Link>
                 </div>
 
                 </div>
                 <div className={styles.footerSocial}>
-                    <Link href="#"><i className="fab fa-facebook"></i></Link>
-                    <Link href="#"><i className="fab fa-instagram"></i></Link>
-                    <Link href="#"><i className="fab fa-twitter"></i></Link>
+                    <Link href="#"  passHref><i className="fab fa-facebook"></i></Link>
+                    <Link href="#"  passHref><i className="fab fa-instagram"></i></Link>
+                    <Link href="#"  passHref><i className="fab fa-twitter"></i></Link>
                 </div>
                 
             </div>
