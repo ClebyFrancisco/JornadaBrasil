@@ -9,13 +9,13 @@ import EmAlta from "../../components/Roteiros/EmAlta";
 import CardRoteiros from "../../components/Roteiros/CardRoteiros";
 
 
-import imagemRoteiros1 from '../../../public/images/roteiros/imagemRoteiros1.jpeg';
-import imagemRoteiros2 from '../../../public/images/roteiros/imagemRoteiros2.jpg';
-import imagemRoteiros3 from '../../../public/images/roteiros/imagemRoteiros3.jpg';
-import imagemRoteiros4 from '../../../public/images/roteiros/imagemRoteiros4.jpg';
-import imagemRoteiros5 from '../../../public/images/roteiros/imagemRoteiros5.png';
-import imagemRoteiros6 from '../../../public/images/roteiros/imagemRoteiros6.jpg';
-import imagemRoteiros7 from '../../../public/images/roteiros/imagemRoteiros7.jpeg';
+import imagemRoteiros1 from '../../../public/images/roteiros/ImagemRoteiros1.jpeg';
+import imagemRoteiros2 from '../../../public/images/roteiros/ImagemRoteiros2.jpg';
+import imagemRoteiros3 from '../../../public/images/roteiros/ImagemRoteiros3.jpg';
+import imagemRoteiros4 from '../../../public/images/roteiros/ImagemRoteiros4.jpg';
+import imagemRoteiros5 from '../../../public/images/roteiros/ImagemRoteiros5.png';
+import imagemRoteiros6 from '../../../public/images/roteiros/ImagemRoteiros6.jpg';
+import imagemRoteiros7 from '../../../public/images/roteiros/ImagemRoteiros7.jpeg';
 
 
 const Roteiros  = () =>{
