@@ -5,6 +5,7 @@ import imagem2 from '../../../../public/images/ImgBanner/Banner2.jpg';
 import imagem3 from '../../../../public/images/ImgBanner/Banner3.jpg';
 import imagem1Mobile from '../../../../public/images/ImgBanner/Imagem1Mobile.png';
 import imagem3Mobile from '../../../../public/images/ImgBanner/Imagem3Mobile.png';
+import Image from 'next/image';
 
 
 const images = [
@@ -13,7 +14,7 @@ const images = [
     { desktop: imagem3.src, mobile: imagem3Mobile.src },
   ];
 
-  const Banner1 = () => {
+  const Banner = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
     const timeoutRef = React.useRef(null)
   
@@ -62,16 +63,23 @@ const images = [
             &#10095;
           </div>
           <div>
-            {images
+          {images
               .filter((img, index) => {
                 return index === currentSlide
               })
               .map((img, index) => {
+                console.log(img.desktop);
+                
                 return (
+                  
                   <picture key={index}>
+                    
                     <source srcSet={img.mobile} media="(max-width: 768px)" />
                     
-                    <img src={img.desktop} alt="banner" />
+                   {/*  <Image src={img.Desktop as any} alt="banner" layout="fill" />  */}
+                   
+                     <img src={img.desktop} alt="banner" /> 
+                     
                   </picture>
                 )
               })}
@@ -91,4 +99,4 @@ const images = [
       )
   
   }
-  export default Banner1;
+  export default Banner;
