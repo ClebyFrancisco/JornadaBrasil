@@ -11,7 +11,7 @@
     .footerContainer{
         display: flex;
         width: 90%;
-        max-width: 1024px;
+        max-width: 1920px;
         height: 80px;
         margin: 10px auto 0;
         justify-content: space-between;
@@ -26,11 +26,12 @@
         display: flex;
         flex-direction: column;
         width: 50%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         
     }
     .footerSocial{
-        width: 20%;
+        width: 15%;
+        font-size: 2rem;
         display: flex;
         justify-content: space-between;
     }
@@ -38,7 +39,7 @@
     .Autorais {
         
         width: 90%;
-        max-width: 1024px;
+        max-width: 1920px;
         height: 20px;
         margin: 0px auto;
         text-align: right;
