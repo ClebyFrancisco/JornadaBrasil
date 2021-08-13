@@ -14,13 +14,13 @@ import {
   DropdownItem,
 } from 'reactstrap';
 
-
 const Header = () => {
 
   return (
     <div>
       <Navbar color="light" light  expand="md"  className={styles.navBar}>
         <NavbarBrand href="/">
+          
           <Image  src={logo} alt='logo - Jornada Brasil' />
 
         </NavbarBrand>
