@@ -29,6 +29,9 @@ const Header = () => {
 
           
          {/*  <Nav className="mr-auto"  navbar > */}
+         <NavItem>
+              <NavLink className={styles.navLinks} href="/"  passHref>Home</NavLink>
+            </NavItem>
             <NavItem>
               <NavLink className={styles.navLinks} href="/roteiros"  passHref>Roteiros</NavLink>
             </NavItem>
