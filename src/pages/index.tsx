@@ -12,6 +12,7 @@ import MapaBrasil from '../../public/images/Brasil2.png';
 import Nav from '../components/Home/Nav';
 import EmAlta from '../components/Roteiros/EmAlta'
 import Image from 'next/image';
+import Banner2 from '../components/Home/Banner2';
 
 export default function Home() {
   return (

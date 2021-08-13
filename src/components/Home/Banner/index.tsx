@@ -16,7 +16,7 @@ const images = [
 
   const Banner = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
-    const timeoutRef = React.useRef(null)
+    const timeoutRef = React.useRef(0)
   
     const resetTimeout = () => {
       if (timeoutRef.current) {
@@ -42,7 +42,7 @@ const images = [
   
     useEffect(() => {
       resetTimeout()
-      timeoutRef.current = setTimeout(
+      timeoutRef.current = window.setTimeout(
         () =>
           setCurrentSlide((prevIndex) =>
             prevIndex === images.length - 1 ? 0 : prevIndex + 1
@@ -68,7 +68,7 @@ const images = [
                 return index === currentSlide
               })
               .map((img, index) => {
-                console.log(img.desktop);
+                
                 
                 return (
                   
@@ -76,9 +76,9 @@ const images = [
                     
                     <source srcSet={img.mobile} media="(max-width: 768px)" />
                     
-                   {/*  <Image src={img.Desktop as any} alt="banner" layout="fill" />  */}
+                   {/* <Image className={styles.img} src={img.desktop} alt="banner" layout="fill" /> */}
                    
-                     <img src={img.desktop} alt="banner" /> 
+                     <img src={img.desktop} alt="banner" />
                      
                   </picture>
                 )
