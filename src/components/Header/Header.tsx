@@ -29,7 +29,7 @@ const Header = () => {
 
           
          {/*  <Nav className="mr-auto"  navbar > */}
-         <NavItem>
+            <NavItem>
               <NavLink className={styles.navLinks} href="/"  passHref>Home</NavLink>
             </NavItem>
             <NavItem>
