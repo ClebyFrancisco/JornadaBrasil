@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from "../../../public/logo.png";
+import logo from "../../../public/logo.svg";
 import styles from "./styles.module.scss";
 import Image from 'next/image';
 import {
@@ -21,7 +21,7 @@ const Header = () => {
       <Navbar color="light" light  expand="md"  className={styles.navBar}>
         <NavbarBrand href="/">
           
-          <Image  src={logo} alt='logo - Jornada Brasil' />
+          <Image src={logo} alt='logo - Jornada Brasil' />
 
         </NavbarBrand>
 

@@ -60,3 +60,17 @@
         }
     }
 }
+
+@media only screen and (max-width: 375px){
+    .footer{
+        .footerInfo{
+            font-size: 12px;
+        }
+        .footerSocial{
+            font-size: .6rem;
+        }
+        .Autorais{
+            font-size: 8px;
+        }
+    }
+}
