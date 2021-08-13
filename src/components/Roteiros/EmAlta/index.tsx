@@ -7,9 +7,7 @@ import ImagemRoteiros2 from "../../../../public/images/roteiros/ImagemRoteiros2.
 const EmAlta = () =>{
     return(
         <div className={styles.EmAlta}>
-
-            
-              <CardImage 
+            <CardImage 
                 title="Pontal do Atalaia" 
                 imagem={ImagemRoteiros1.src}
                 local="Rio de Janeiro" />
