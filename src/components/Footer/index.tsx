@@ -5,6 +5,7 @@ import styles from "./styles.module.scss";
 const Footer = () =>{
     return(
         <div className={styles.footer}>
+             
             <div className={styles.footerContainer}>
                 <div className={styles.footerLinks}>
                 <div className={styles.footerInfo}>
@@ -12,6 +13,7 @@ const Footer = () =>{
                     <Link href="#"  passHref><a>Contato</a></Link>
                     <Link href="#"  passHref><a>Termo de Uso</a></Link>
                 </div>
+                
                 <div className={styles.footerInfo}>
                     <Link href="#"  passHref><a>Perguntas Frequentes</a></Link>
                     <Link href="#"  passHref><a>Politica de Privacidade</a></Link>
@@ -24,11 +26,13 @@ const Footer = () =>{
                     <Link href="#"  passHref><i className="fab fa-twitter"></i></Link>
                 </div>
                 
+                
             </div>
             <div className={styles.Autorais}>
-            Jornada Brasil © 2021. Todos os direitos reservados.
+            <p>Jornada Brasil © 2021. Todos os direitos reservados.</p>
             </div>
-
+            
+            
         </div>
     )
 }

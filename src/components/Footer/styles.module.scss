@@ -1,57 +1,50 @@
 .footer {
     background: url(../../../public/footer/backFooter.png)  no-repeat center;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height:150px;
     padding: 10px;
     font-family: 'Contrail One', cursive;
     font-size: 14px;
+    color: white;
 
     .footerContainer{
         display: flex;
-        width: 80%;
-        margin: 10px auto;
+        width: 90%;
+        max-width: 1024px;
+        height: 80px;
+        margin: 10px auto 0;
+        justify-content: space-between;
         
     }
     .footerLinks{
         display: flex;
-
-        .footerInfo{
-            display: flex;
-            color: white;
-            flex-direction: column;
-            margin-right: 30px;
-        }
-
-    }
-    .footerSocial{
-        color:white;
-        display: flex;
-        text-align: right;
-        justify-content: right;
+        justify-content: space-between;
         width: 60%;
-        padding-left: 50%;
-        i {
-            margin: 15px;
-        }
-
     }
-    .Autorais {
-        width: 75%;
-        border-top: 1px solid rgb(151, 151, 151);
-        margin:10px auto;
-        text-align: right;
-        color: white;
-        font-size: 12px;
-    }
-    
-}
-@media only screen and (max-width: 850px){
     .footerInfo{
-        width: 200px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 0.8rem;
         
     }
     .footerSocial{
-        width: 20px;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
     }
+
+    .Autorais {
+        
+        width: 90%;
+        max-width: 1024px;
+        height: 20px;
+        margin: 0px auto;
+        text-align: right;
+        color: white;
+        font-size: 12px;
+        border-top: 1px solid rgba(84, 102, 96, 0.637);
+       
+    } 
 }
