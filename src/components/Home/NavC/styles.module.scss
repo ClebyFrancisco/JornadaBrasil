@@ -1,0 +1,29 @@
+.navConheca{
+    background-color: #F2F4F1;
+    color: #363E59;
+    width: 75%;
+    padding: 0px;
+    margin: -20px auto 0;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+        li{
+            text-align: center;
+            display: block;
+            padding: 10 20px;
+            border-right: 1px solid rgb(78, 78, 78);
+            width: 20%;
+            &:hover{
+                background-color: rgb(138, 138, 138);
+            }
+            
+        }
+        li:last-child{
+            border-right: none;
+        }
+
+}

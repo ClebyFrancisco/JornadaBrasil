@@ -10,6 +10,7 @@ import MapaBrasil from '../../public/images/Brasil2.png';
 
 
 import Nav from '../components/Home/Nav';
+import NavC from '../components/Home/NavC'
 import EmAlta from '../components/Roteiros/EmAlta'
 import Image from 'next/image';
 import Example from '../components/Home/Banner2';
@@ -22,10 +23,10 @@ export default function Home() {
       <Article imagem={imagem1.src} title={"QUAL O DESTINO DOS SEUS SONHOS?"}/>
       <Nav /> 
       <div className={styles.mapaBrasil}>
-      <Image src={MapaBrasil} alt="mapa Brasil"/>
-        
+      <Image src={MapaBrasil} alt="mapa Brasil"/> 
       </div>
       <Article imagem={imagem2.src} title={"conheça +"}/>
+      <NavC />
       <Article imagem={imagem3.src} title={"Roteiros em Alta"}/>
       <div className={styles.emAlta}></div>
       <EmAlta />
