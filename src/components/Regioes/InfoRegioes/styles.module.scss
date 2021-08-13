@@ -1,8 +1,8 @@
 .ImageInfoRegioes {
     background: no-repeat center;
     background-size: cover;
-    width: 550px;
-    height: 250px;
+    width: 600px;
+    height: 200px;
     border-radius: 10px;
     margin: 10px;
     position: relative;
@@ -23,6 +23,40 @@
 }
 .InfoRegioes {
     display: flex;
-    width: 100vw;
+    width: 90%;
+    max-width: 1920px;
+    margin: 0px auto;
    padding: 20px;
+}
+.InfoRegioesMobile{
+    display: none;
+    color: black;
+    padding: 20px;
+    h2{
+        font-family: 'Contrail One', cursive;
+        font-size: 32px;
+        margin: 10px auto;
+        
+    }
+    p{
+        font-size: 14px;
+        margin: 10px auto;
+      
+    }
+    .ImageInfoRegioesMobile{
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .InfoRegioes{
+        display: none;
+    }
+    .InfoRegioesMobile{
+        display: block;
+    }
+    
 }

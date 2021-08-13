@@ -31,7 +31,7 @@ const Norte  = () =>{
     return(
         <Layout title="Jornada Brasil - Norte">
             <CapaRegioes imagem={BannerNorte.src} height="250" />
-            <InfoRegioes 
+             <InfoRegioes 
             imagem={PerfilNorte.src} 
             titulo="Conheça os encantos do Norte" 
             text="
@@ -44,7 +44,7 @@ const Norte  = () =>{
             com mais infra-estrutura para os turistas."
             />
 
-            <CapaRegioes imagem={Regiao1Norte.src} height="350" />  
+            {/* <CapaRegioes imagem={Regiao1Norte.src} height="350" />  
             <TitleSection titulo="Sobre a Região"  /> 
             <ArticleRegioes 
                 text="A Região Norte tem uma cultura muito rica,
@@ -92,7 +92,7 @@ const Norte  = () =>{
                  <Estados imagem={Tocantins.src} title="Tocantins"/>
                  
                  
-             </ContainerEstado>
+             </ContainerEstado> */}
             
         </Layout>
   )
