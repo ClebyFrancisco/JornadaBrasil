@@ -17,3 +17,10 @@
     width: 28vw;
 
 }
+
+@media only screen and (max-width: 525px){
+    .cardImagem{
+        width: 97vw;
+        height: 190px;
+    }
+}
