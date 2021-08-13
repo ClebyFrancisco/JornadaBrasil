@@ -3,3 +3,9 @@
     justify-content: space-around;
     margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 525px){
+    .EmAlta{
+        flex-direction: column;
+    }
+}

@@ -23,3 +23,12 @@
         font-size: 1.5rem;
     }
 }
+
+@media only screen and (max-width: 525px){
+    .emContainer{
+        margin: auto;
+        margin-bottom: 3px;
+        width: 97vw;
+        height: 190px;
+    }
+}
