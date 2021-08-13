@@ -25,7 +25,7 @@ const items = [
     key: "3",
   },
 ];
-const Banner2 = () => <UncontrolledCarousel items={items}  className={styles.banner}/>;
+const Banner = () => <UncontrolledCarousel items={items}  className={styles.banner}/>;
 /* const Example = () => (
   <Row>
     <Col md="8" className="mx-auto">
@@ -34,4 +34,4 @@ const Banner2 = () => <UncontrolledCarousel items={items}  className={styles.ban
   </Row>
 );
  */
-export default Banner2;
+export default Banner;
