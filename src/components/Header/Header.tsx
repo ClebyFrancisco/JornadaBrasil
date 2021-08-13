@@ -19,12 +19,13 @@ const Header = () => {
   return (
     <div>
       <Navbar color="light" light  expand="md"  className={styles.navBar}>
-        <NavbarBrand href="/">
+        <div className={styles.logo}>
+        <NavbarBrand href="/" >
           
-          <Image src={logo} alt='logo - Jornada Brasil' />
+          <Image src={logo} alt='logo - Jornada Brasil' layout='responsive' />
 
         </NavbarBrand>
-
+        </div>
           <div className={styles.nav}>
 
           
