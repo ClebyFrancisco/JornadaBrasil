@@ -11,19 +11,12 @@
     list-style: none;
     justify-content: space-around;
     align-items: center;
-        li{
-            text-align: center;
-            display: block;
-            padding: 10 20px;
-            border-right: 1px solid rgb(78, 78, 78);
-            width: 20%;
-            &:hover{
-                background-color: rgb(138, 138, 138);
-            }
-            
-        }
-        li:last-child{
-            border-right: none;
-        }
+    text-align: center;
+}
 
+.imageConheca{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
 }

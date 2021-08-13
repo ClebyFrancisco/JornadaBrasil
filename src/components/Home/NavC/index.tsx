@@ -1,61 +1,44 @@
-import React, {useState} from "react";
-import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from "reactstrap";
-import classnames from 'classnames'
+import React from "react";
+import Image from "next/image";
+import { Tabs, Tab } from "react-bootstrap";
 import styles from './styles.module.scss'
 
-const NavC = (props) =>{
-    const [activeTab, setActiveTab] = useState('1');
+import historia from '../../../../public/images/Conheca/historia.svg'
+import cultura from '../../../../public/images/Conheca/cultura.svg'
+import pontos from '../../../../public/images/Conheca/pontos.svg'
+import hotel from '../../../../public/images/Conheca/hotel.svg'
+import restaurantes from '../../../../public/images/Conheca/restaurantes.svg'
 
-    const toggle = (tab) => {
-        if(activeTab !== tab) setActiveTab(tab);
-      }
-
-    return(
-        <div>
-            <Nav tabs className={styles.navConheca}>
-                <NavItem>
-                    <NavLink className={classnames({ active: activeTab === '1' })} onClink={() => { toggle('1')}}>
-                        Historia
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink className={classnames({ active: activeTab === '2' })} onClink={() => { toggle('2')}}>
-                        Cultura
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink className={classnames({ active: activeTab === '3' })} onClink={() => { toggle('3')}}>
-                        Pontos Turisticos
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink className={classnames({ active: activeTab === '4' })} onClink={() => { toggle('4')}}>
-                        Hotel
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink className={classnames({ active: activeTab === '5' })} onClink={() => { toggle('5')}}>
-                        Restaurantes
-                    </NavLink>
-                </NavItem>
-            </Nav>
-            <TabContent activeTab={activeTab}>
-                <TabPane tabId="1">
-                    <Row>
-                        <Col sm="12">
-                            <h4>Tab 1 Contents</h4>
-                        </Col>
-                    </Row>
-                </TabPane>
-                <TabPane tabId="2">
-                    <Row>
-                        <Col sm="12">
-                            <h4>Tab 2 Contents</h4>
-                        </Col>
-                    </Row>
-                </TabPane>
-            </TabContent>
-        </div>
-    )
+const NavC = () =>{
+        return(
+            <Tabs defaultActiveKey="historia" transition={false} id="tabs" className={styles.navConheca}>
+                <Tab eventKey="historia" title="História">
+                    <div className={styles.imageConheca}>
+                        <Image src={historia} alt="Historia - Conheça+" />
+                    </div>
+                </Tab>
+                <Tab eventKey="cultura" title="Cultura">
+                    <div className={styles.imageConheca}>
+                        <Image src={cultura} alt="Cultura - Conheça+" />
+                    </div>
+                </Tab>
+                <Tab eventKey="pontos" title="Pontos Turísticos">
+                    <div className={styles.imageConheca}>
+                        <Image src={pontos} alt="Pontos Turísticos - Conheça+" />
+                    </div>
+                </Tab>
+                <Tab eventKey="hotel" title="Hotel">
+                    <div className={styles.imageConheca}>
+                        <Image src={hotel} alt="Hotel - Conheça+" />
+                    </div>
+                </Tab>
+                <Tab eventKey="restaurantes" title="Restaurantes">
+                    <div className={styles.imageConheca}>
+                        <Image src={restaurantes} alt="Restaurantes - Conheça+" />
+                    </div>
+                </Tab>
+            </Tabs>
+        )
 }
+
 export default NavC;
