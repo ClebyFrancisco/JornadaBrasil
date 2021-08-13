@@ -11,9 +11,19 @@
         align-items: right;
         .navLinks{
             font-family: 'Contrail One', cursive;
-            font-size: 16px;
+            font-size: 36px;
             color:#363E59;
         }
     }
 
+}
+
+@media only screen and (max-width: 750px){
+    .navBar{
+        .nav{
+            .navLinks{
+                font-size: 16px;
+            }
+        }
+    }
 }

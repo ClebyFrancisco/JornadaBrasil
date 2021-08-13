@@ -49,3 +49,14 @@
        
     } 
 }
+
+@media only screen and (max-width: 750px){
+    .footer{
+        .footerInfo{
+            font-size: 15px;
+        }
+        .footerSocial{
+            font-size: 1rem;
+        }
+    }
+}
