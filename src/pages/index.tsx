@@ -21,10 +21,10 @@ export default function Home() {
       <Article imagem={imagem1.src} title={"QUAL O DESTINO DOS SEUS SONHOS?"}/>
       <Nav /> 
       <div className={styles.mapaBrasil}>
-      <Image src={MapaBrasil} alt="mapa Brasil"/>
-        
+      <Image src={MapaBrasil} alt="mapa Brasil"/> 
       </div>
       <Article imagem={imagem2.src} title={"conheça +"}/>
+      <Nav />
       <Article imagem={imagem3.src} title={"Roteiros em Alta"}/>
       <div className={styles.emAlta}></div>
       <EmAlta />
