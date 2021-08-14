@@ -2,7 +2,8 @@ import React from "react"
 import Layout from "../../../components/layout";
 import CapaRegioes from "../../../components/Regioes/CapaRegioes";
 import styles from "../../../styles/Regiao.module.scss";
-
+import api from '../../../services/api'
+import axios from "axios";
 
 import Banner from "../../../../public/images/CentroOeste/banner.jpg";
 import Perfil from "../../../../public/images/CentroOeste/perfil.jpg";
@@ -28,15 +29,16 @@ import Article from "../../../components/Article";
 import ContainerEstado from "../../../components/Regioes/Estados/ContainerEstado";
 import Estados from "../../../components/Regioes/Estados";
 
-const CentroOeste  = () =>{
+const CentroOeste  = ({dados}) => {
     return(
         <Layout title="Jornada Brasil - Centro-Oeste">
             <CapaRegioes imagem={Banner.src} height="250" />
             <InfoRegioes 
             imagem={Perfil.src} 
             titulo="Conheça os encantos do Centro-Oeste" 
-            text="
-            O turismo vem se desenvolvendo rapidamente na região Centro-Oeste do Brasil, atraindo visitantes de várias partes do mundo. A região mais conhecida é o Pantanal, no Mato Grosso e Mato Grosso do Sul. Trata-se da maior planície inundável do mundo e uma das maiores bacias de sedimentação do planeta. Outros pontos de interesse são as chapadas, como a dos Guimarães, em Mato Grosso, e a dos Veadeiros, em Goiás. Há ainda Brasília, no Distrito Federal, marco da arquitetura e urbanismo modernos."
+            text={dados.map((artigo) => (
+                <p>{artigo.desc_regiao}</p>
+            ))}
             />
             <div className={styles.CapaRegioes}>
                 <CapaRegioes imagem={Regiao1.src} height="350" /> 
@@ -85,4 +87,13 @@ const CentroOeste  = () =>{
         </Layout>
   )
 }
+
+CentroOeste.getInitialProps = async function () {
+    const response = await axios.get(
+        'https://jornadabrasil.herokuapp.com/regiao/centro-oeste'
+    )
+
+    return { dados: response.data }
+}
+
 export default CentroOeste;
