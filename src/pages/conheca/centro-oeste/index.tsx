@@ -36,9 +36,7 @@ const CentroOeste  = ({dados}:{dados:any}) => {
             <InfoRegioes 
             imagem={Perfil.src} 
             titulo="Conheça os encantos do Centro-Oeste" 
-            text={dados.map((artigo:any) => (
-                <p key={artigo.desc_regiao}>{artigo.desc_regiao}</p>
-            ))}
+            text="O turismo vem se desenvolvendo rapidamente na região Centro-Oeste do Brasil, atraindo visitantes de várias partes do mundo. A região mais conhecida é o Pantanal, no Mato Grosso e Mato Grosso do Sul. Trata-se da maior planície inundável do mundo e uma das maiores bacias de sedimentação do planeta. Outros pontos de interesse são as chapadas, como a dos Guimarães, em Mato Grosso, e a dos Veadeiros, em Goiás. Há ainda Brasília, no Distrito Federal, marco da arquitetura e urbanismo modernos."
             />
             <div className={styles.CapaRegioes}>
                 <CapaRegioes imagem={Regiao1.src} height="350" /> 
@@ -48,8 +46,9 @@ const CentroOeste  = ({dados}:{dados:any}) => {
             </div>
             <TitleSection titulo="Sobre a Região"  /> 
             <ArticleRegioes 
-                text="Os estados centrais costumam ser esquecidos, mas você sabia que o turismo na região Centro-Oeste também é incrível? Lar de cachoeiras, cânions, grutas e lagoas a perder de vista, a região central do país também abriga as nascentes que alimentam as principais bacias hidrográficas brasileiras.Sua cultura é bem diversificada, com elementos da cultura indígena, dos imigrantes paulistas, mineiros, gaúchos, bolivianos e paraguaios.
-                "
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.desc_regiao}>{artigo.desc_regiao}</p>
+                ))}
                 imagem={Regiao2.src}   
             />
             <div className={styles.CapaRegioes}>
@@ -60,8 +59,9 @@ const CentroOeste  = ({dados}:{dados:any}) => {
             </div>  
             <TitleSection titulo="Culinária"  /> 
             <ArticleRegioes 
-                text="A região Centro-Oeste tem pratos tradicionais que, além de deliciosos, ajudam a contar a história, os costumes e a cultura local. Ao se dirigir a essa parte do país, o viajante entra em contato com iguarias deliciosas, como o arroz com pequi, o pacu assado recheado, o caldo de piranha, o caribéu pantaneiro, a mojica de pintado e a galinhada com pequi.
-                "
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.culinaria}>{artigo.culinaria}</p>
+                ))}
                 imagem={Culinaria2.src}   
             /> 
             <div className={styles.CapaRegioes}>
