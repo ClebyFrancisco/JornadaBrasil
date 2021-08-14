@@ -38,42 +38,36 @@ const CentroOeste  = () =>{
             text="
             O turismo vem se desenvolvendo rapidamente na região Centro-Oeste do Brasil, atraindo visitantes de várias partes do mundo. A região mais conhecida é o Pantanal, no Mato Grosso e Mato Grosso do Sul. Trata-se da maior planície inundável do mundo e uma das maiores bacias de sedimentação do planeta. Outros pontos de interesse são as chapadas, como a dos Guimarães, em Mato Grosso, e a dos Veadeiros, em Goiás. Há ainda Brasília, no Distrito Federal, marco da arquitetura e urbanismo modernos."
             />
-
             <div className={styles.CapaRegioes}>
                 <CapaRegioes imagem={Regiao1.src} height="350" /> 
             </div>
             <div className={styles.CapaRegioesMobile}>
                 <CapaRegioes imagem={Regiao1.src} height="250" /> 
             </div>
-             
             <TitleSection titulo="Sobre a Região"  /> 
             <ArticleRegioes 
                 text="Os estados centrais costumam ser esquecidos, mas você sabia que o turismo na região Centro-Oeste também é incrível? Lar de cachoeiras, cânions, grutas e lagoas a perder de vista, a região central do país também abriga as nascentes que alimentam as principais bacias hidrográficas brasileiras.Sua cultura é bem diversificada, com elementos da cultura indígena, dos imigrantes paulistas, mineiros, gaúchos, bolivianos e paraguaios.
                 "
                 imagem={Regiao2.src}   
             />
-
             <div className={styles.CapaRegioes}>
                 <CapaRegioes imagem={Culinaria.src} height="350" /> 
             </div>
             <div className={styles.CapaRegioesMobile}>
                 <CapaRegioes imagem={Culinaria.src} height="250" /> 
             </div>  
-
             <TitleSection titulo="Culinária"  /> 
             <ArticleRegioes 
                 text="A região Centro-Oeste tem pratos tradicionais que, além de deliciosos, ajudam a contar a história, os costumes e a cultura local. Ao se dirigir a essa parte do país, o viajante entra em contato com iguarias deliciosas, como o arroz com pequi, o pacu assado recheado, o caldo de piranha, o caribéu pantaneiro, a mojica de pintado e a galinhada com pequi.
                 "
                 imagem={Culinaria2.src}   
             /> 
-
             <div className={styles.CapaRegioes}>
                 <CapaRegioes imagem={Cultura.src} height="350" /> 
             </div>
             <div className={styles.CapaRegioesMobile}>
                 <CapaRegioes imagem={Cultura.src} height="250" /> 
             </div> 
-             
             <TitleSection titulo="Cultura"  /> 
             <ArticleRegioes 
                 text="Um polo de influências, sendo berço de muitos artistas no meio musical e com eventos marcantes que revivem muito da história de nosso país. Essa região, por diversas influências de outros estados e outros países da america do sul, em sua mistura única nos rende arquiteturas, sotaques, costumes que só poderíamos ver aqui.
@@ -88,9 +82,7 @@ const CentroOeste  = () =>{
                  <Estados imagem={DistritoFederal.src} title="Distrito Federal"/>
                
              </ContainerEstado>
-            
         </Layout>
   )
-    
 }
 export default CentroOeste;
