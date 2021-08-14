@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../../../components/layout";
 import CapaRegioes from "../../../components/Regioes/CapaRegioes";
 import styles from "../../../styles/Regiao.module.scss";
+import axios from "axios";
 
 
 import Banner from "../../../../public/images/Nordeste/banner.jpg";
@@ -32,20 +33,16 @@ import ContainerEstado from "../../../components/Regioes/Estados/ContainerEstado
 import Estados from "../../../components/Regioes/Estados";
 
 
-const Nordeste  = () =>{
+const Nordeste  = ({dados}:{dados:any}) =>{
     return(
         <Layout title="Jornada Brasil - Nordeste">
             <CapaRegioes imagem={Banner.src} height="250" />
             <InfoRegioes 
             imagem={Perfil.src} 
             titulo="Conheça os encantos do Nordeste" 
-            text="
-            Cultura representa uma complexa teia.
-             Nela estão incluídos conhecimentos,
-              costumes, artes, crenças, cultos religiosos,
-               literatura popular, danças e hábitos 
-               de determinado grupo e isso o Nordeste 
-               tem de sobra!"
+            text={dados.map((artigo:any) => (
+                <p key={artigo.conheca}>{artigo.conheca}</p>
+            ))}
             />
             <div className={styles.CapaRegioes}>
                 <CapaRegioes imagem={Regiao1.src} height="350" /> 
@@ -56,15 +53,9 @@ const Nordeste  = () =>{
              
             <TitleSection titulo="Sobre a Região"  /> 
             <ArticleRegioes 
-                text="Existe uma ideia a respeito do Nordeste que
-                 se baseia em dois extremos: Litoral com praias 
-                 exuberantes e interior secas severas. Acontece que 
-                 mesmo sendo duas realidades presentes na região o 
-                 Nordeste vai muito além disso. Há nuancias em sua 
-                 vegetação, relevos, costumes e características.
-                 Quanto mais se explora mais se entende que se tratam 
-                 de micro regiões, cada uma com suas influências e 
-                 importâncias."
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.desc_regiao}>{artigo.desc_regiao}</p>
+                ))}
                 imagem={Regiao2.src}   
             />  
            <div className={styles.CapaRegioes}>
@@ -76,9 +67,9 @@ const Nordeste  = () =>{
              
             <TitleSection titulo="Culinária"  /> 
             <ArticleRegioes 
-                text="A culinária nordestina foi desenvolvida sob a influência da comida portuguesa, africana e indígena.
-                O consumo de raízes, o preparo de comidas bem temperadas e apimentadas, as comidas de milho e coco, o cuscuz, a pamonha e a canjica são heranças que foram adaptadas em cada estado.
-                São exemplos de raízes: macaxeira, inhame, batata doce. Quanto às comidas bem temperadas podemos citar: acarajé, vatapá, bobó de camarão, moqueca de peixe, sururu."
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.culinaria}>{artigo.culinaria}</p>
+                ))}
                 imagem={Culinaria2.src}   
             /> 
 
@@ -92,7 +83,9 @@ const Nordeste  = () =>{
              
             <TitleSection titulo="Cultura"  /> 
             <ArticleRegioes 
-                text="A cultura do Nordeste brasileiro desenvolveu hábitos próprios com relação ao mundo e às manifestações culturais, sendo as que mais se destacam na região: festas juninas, Reisado, poesia popular, artesanato, capoeira, frevo, culinária e religiões afro-brasileiras."
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.cultura}>{artigo.cultura}</p>
+                ))}
                 imagem={Cultura2.src}   
             /> 
              <Article imagem={Regiao1.src} title={"Estados"}/>
@@ -109,7 +102,15 @@ const Nordeste  = () =>{
              </ContainerEstado>
             
         </Layout>
-  )
-    
+  ) 
 }
+
+Nordeste.getInitialProps = async function ({dados}:{dados:any}) {
+    const response = await axios.get(
+        'https://jornadabrasil.herokuapp.com/regiao/Nordeste'
+    )
+
+    return { dados: response.data }
+}
+
 export default Nordeste;

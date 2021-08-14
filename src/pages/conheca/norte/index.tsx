@@ -1,6 +1,7 @@
 import Layout from "../../../components/layout";
 import CapaRegioes from "../../../components/Regioes/CapaRegioes";
 import styles from "../../../styles/Regiao.module.scss";
+import axios from "axios";
 
 import BannerNorte from "../../../../public/images/Norte/banner.jpg";
 import PerfilNorte from "../../../../public/images/Norte/perfil.jpg";
@@ -28,21 +29,16 @@ import ContainerEstado from "../../../components/Regioes/Estados/ContainerEstado
 import Estados from "../../../components/Regioes/Estados";
 
 
-const Norte  = () =>{
+const Norte  = ({dados}:{dados:any}) =>{
     return(
         <Layout title="Jornada Brasil - Norte">
             <CapaRegioes imagem={BannerNorte.src} height="250" />
              <InfoRegioes 
             imagem={PerfilNorte.src} 
             titulo="Conheça os encantos do Norte" 
-            text="
-            Por ser uma região pouco habitada e de ocupação mais tardia,
-            o ecossistema da região Norte do Brasil encontra-se preservado, 
-            o que propicia as atividades de ecoturismo.
-            Como parte do recente planejamento 
-            de desenvolvimento sustentável, a 
-            exploração do turismo cresce a cada dia 
-            com mais infra-estrutura para os turistas."
+            text={dados.map((artigo:any) => (
+                <p key={artigo.conheca}>{artigo.conheca}</p>
+            ))}
             />
             
             <div className={styles.CapaRegioes}>
@@ -54,15 +50,9 @@ const Norte  = () =>{
               
             <TitleSection titulo="Sobre a Região"  /> 
             <ArticleRegioes 
-                text="A Região Norte tem uma cultura muito rica,
-                 influenciada fortemente pelas tribos indígenas 
-                 do Brasil, guarda muita história e é berço das 
-                 maiores riquezas naturais do nosso país.
-                É uma região pouco explorada, tanto por turistas 
-                de fora como de dentro do Brasil. Tem se uma ideia 
-                de que a região é “apenas floresta”, desconsiderando
-                 a cultura e toda a infraestrutura construída a partir 
-                 de uma vida em conjunto com o meio."
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.desc_regiao}>{artigo.desc_regiao}</p>
+                ))}
                 imagem={Regiao2Norte.src}   
             /> 
             <div className={styles.CapaRegioes}>
@@ -74,13 +64,9 @@ const Norte  = () =>{
             
             <TitleSection titulo="Culinária"  /> 
             <ArticleRegioes 
-                text="Além das belas paisagens e passeios turísticos
-                 recheados de história, uma viagem à região Norte
-                  possibilita conhecer, também, a deliciosa culinária 
-                  típica. Com grande influência em sua cultura pelos 
-                  indígenas, os pratos são, em sua maioria, compostos 
-                  por peixes, frutas e ervas para temperos, como por 
-                  exemplo: Pato no tucupi, Gurijuba, Caruru, Tacacá..."
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.culinaria}>{artigo.culinaria}</p>
+                ))}
                 imagem={Culinaria2Norte.src}   
             />
             <div className={styles.CapaRegioes}>
@@ -91,12 +77,9 @@ const Norte  = () =>{
             </div>
             <TitleSection titulo="Cultura"  /> 
             <ArticleRegioes 
-                text="Por ser uma região com uma população bastante 
-                miscigenada, o Norte possui grande diversidade de 
-                manifestações culturais, os seja, de costumes, crenças,
-                 festas populares, culinária, danças, e etc.As festividades
-                 do norte do Brasil são fortemente influenciadas pela cultura
-                  indígena, assim como a religiosidade cristã."
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.cultura}>{artigo.cultura}</p>
+                ))}
                 imagem={Cultura2Norte.src}   
             /> 
              <Article imagem={Regiao1Norte.src} title={"Estados"}/>
@@ -116,4 +99,13 @@ const Norte  = () =>{
   )
     
 }
+
+Norte.getInitialProps = async function ({dados}:{dados:any}) {
+    const response = await axios.get(
+        'https://jornadabrasil.herokuapp.com/regiao/Norte'
+    )
+
+    return { dados: response.data }
+}
+
 export default Norte;

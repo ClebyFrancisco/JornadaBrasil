@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../../../components/layout";
 import CapaRegioes from "../../../components/Regioes/CapaRegioes";
 import styles from "../../../styles/Regiao.module.scss";
-import api from '../../../services/api'
 import axios from "axios";
 
 import Banner from "../../../../public/images/CentroOeste/banner.jpg";

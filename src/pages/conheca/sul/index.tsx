@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../../../components/layout";
 import CapaRegioes from "../../../components/Regioes/CapaRegioes";
 import styles from "../../../styles/Regiao.module.scss";
+import axios from "axios";
 
 
 import Banner from "../../../../public/images/Sul/banner.jpg";
@@ -28,17 +29,16 @@ import Article from "../../../components/Article";
 import ContainerEstado from "../../../components/Regioes/Estados/ContainerEstado";
 import Estados from "../../../components/Regioes/Estados";
 
-const Sul  = () =>{
+const Sul  = ({dados}:{dados:any}) =>{
     return(
         <Layout title="Jornada Brasil - Sul">
             <CapaRegioes imagem={Banner.src} height="250" />
             <InfoRegioes 
             imagem={Perfil.src} 
             titulo="Conheça os encantos do Sul do Brasil" 
-            text="
-            Essa região apresenta elementos culturais dos índios (primeiros ocupantes do território), espanhóis e portugueses (colonizadores), negros (escravos). Posteriormente, os imigrantes alemães, italianos, açorianos, eslavos, japoneses, entre outros, contribuíram para a diversidade cultural do Sul do Brasil.
-            Aqui nos aproximamos um pouco mais da europa sem perder a nossa brasilidade.
-            "
+            text={dados.map((artigo:any) => (
+                <p key={artigo.conheca}>{artigo.conheca}</p>
+            ))}
             />
             <div className={styles.CapaRegioes}>
                 <CapaRegioes imagem={Regiao1.src} height="350" />
@@ -49,8 +49,9 @@ const Sul  = () =>{
               
             <TitleSection titulo="Sobre a Região"  /> 
             <ArticleRegioes 
-                text="Arquitetura tipicamente europeia, além da arquitetura, os imigrantes do velho continente contribuíram na cultura, sendo os Alemães, Holandeses, Espanhóis, Italianos, dentre outros, os grandes responsáveis por isso. Florestas de pinheiros que vemos nos filmes, clima frio com geadas e com uma ótima infraestrutura, esse o Sul.
-                "
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.desc_regiao}>{artigo.desc_regiao}</p>
+                ))}
                 imagem={Regiao2.src}   
             /> 
             <div className={styles.CapaRegioes}>
@@ -62,8 +63,9 @@ const Sul  = () =>{
             
             <TitleSection titulo="Culinária"  /> 
             <ArticleRegioes 
-                text="Você vai encontrar muita carne por aqui. A Região Sul possui uma culinária repleta de pratos quentes para harmonizar com o clima frio e que, como em outras regiões do Brasil, agrega referências de muitas culturas. Tanto os povos indígenas quanto os colonizadores europeus e os escravos africanos marcaram fortemente os hábitos alimentares dos estados do Sul do País, e é por isso que Paraná, Santa Catarina e Rio Grande do Sul têm pratos tão característicos.
-                "
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.culinaria}>{artigo.culinaria}</p>
+                ))}
                 imagem={Culinaria2.src}   
             />
             <div className={styles.CapaRegioes}>
@@ -75,8 +77,9 @@ const Sul  = () =>{
             
             <TitleSection titulo="Cultura"  /> 
             <ArticleRegioes 
-                text="O Sul do Brasil dissemina sua cultura remetendo ao nativismo, ao regionalismo e ao folclore. Há festas típicas de lá que vem de suas influencias europeias, algumas fortemente tradicionais e mantendo suas raízes, outras que se adaptaram ao longo dos anos e criaram seu próprio jeitinho Brasileiro.
-                "
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.cultura}>{artigo.cultura}</p>
+                ))}
                 imagem={Cultura2.src}   
             /> 
              <Article imagem={Regiao1.src} title={"Estados"}/>
@@ -89,6 +92,14 @@ const Sul  = () =>{
             
         </Layout>
   )
-    
 }
+
+Sul.getInitialProps = async function ({dados}:{dados:any}) {
+    const response = await axios.get(
+        'https://jornadabrasil.herokuapp.com/regiao/Sul'
+    )
+
+    return { dados: response.data }
+}
+
 export default Sul;
