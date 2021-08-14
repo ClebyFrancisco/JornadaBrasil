@@ -29,15 +29,15 @@ import Article from "../../../components/Article";
 import ContainerEstado from "../../../components/Regioes/Estados/ContainerEstado";
 import Estados from "../../../components/Regioes/Estados";
 
-const CentroOeste  = ({dados}) => {
+const CentroOeste  = ({dados}:{dados:any}) => {
     return(
         <Layout title="Jornada Brasil - Centro-Oeste">
             <CapaRegioes imagem={Banner.src} height="250" />
             <InfoRegioes 
             imagem={Perfil.src} 
             titulo="Conheça os encantos do Centro-Oeste" 
-            text={dados.map((artigo) => (
-                <p>{artigo.desc_regiao}</p>
+            text={dados.map((artigo:any) => (
+                <p key={artigo.desc_regiao}>{artigo.desc_regiao}</p>
             ))}
             />
             <div className={styles.CapaRegioes}>
@@ -88,7 +88,7 @@ const CentroOeste  = ({dados}) => {
   )
 }
 
-CentroOeste.getInitialProps = async function () {
+CentroOeste.getInitialProps = async function ({dados}:{dados:any}) {
     const response = await axios.get(
         'https://jornadabrasil.herokuapp.com/regiao/centro-oeste'
     )
