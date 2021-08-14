@@ -36,9 +36,6 @@ const Header = () => {
             <NavItem>
               <NavLink className={styles.navLinks} href="/roteiros"  passHref>Roteiros</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink className={styles.navLinks} href="/galeria"  passHref>Galeria</NavLink>
-            </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret className={styles.navLinks}>
                 Conheça +

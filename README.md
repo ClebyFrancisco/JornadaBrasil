@@ -1,4 +1,23 @@
-# Introdução
+# Jornada Brasil
+
+
+<img align="right" src="public/logo.png" width="25%" alt="Jornada Brasil">
+
+## Tópicos 
+
+[Sobre o Jornada Brasil](#sobre-o-Jornada-Brasil)
+
+[Tecnologias](#tecnologias)
+
+[Instalação e uso](#instalação-e-uso)
+
+[Deploy no Vercel](#Deploy-no-Vercel)
+
+[Licença](#licença)
+
+<br>
+
+## sobre o Jornada Brasil
 
 O tema foi escolhido sendo levado em consideração um problema relacionado ao nosso país: Desvalorização Cultural.
 É muito comum ouvir pessoas superestimando tudo o que vêm de fora e ignorando toda a riqueza e beleza que nossa terra oferece de braços abertos.
@@ -6,38 +25,65 @@ Mas como explorar e transformar a cultura de um país tão grande numa vitrine v
 Então levantamos a primeira pergunta: O que é "Cultura?"
 Depois de uma conversa, definimos que cultura, além de agregar muitas áreas, está relacionada a experiências que cada um tem com diferentes temas. E como poderíamos gerar mais experiências e incentivar as pessoas a buscarem por tal coisa? Através de viagens!
 Então o ato de Viajar se tornou o nosso produto. Assim nasceu o Jornada Brasil!
+<br>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- [Visite o Site Jornada Brasil](https://jornadabrasil-alpha.vercel.app/)
 
-## Getting Started
+## Tecnologias
 
-First, run the development server:
+Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
+
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Reactstrap](https://reactstrap.github.io/)
+- [Bootstrap](https://getbootstrap.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [VS Code](https://code.visualstudio.com/) com [ESLint](https://eslint.org/), [Prettier](https://prettier.io/) e [EditorConfig](https://editorconfig.org/)
+
+- <br>
+## Instalação e uso
 
 ```bash
-npm run dev
-# or
+# Abra um terminal e copie este repositório com o comando
+git clone https://github.com/ClebyFrancisco/desafiofinal.git
+# ou use a opção de download.
+
+# Entre na pasta do projeto com 
+cd desafiofinal
+
+# Instale as dependências
+yarn install
+
+# Rode a aplicação
 yarn dev
+
+# Acesse http://localhost:3000 no seu navegador.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- <br>
+## Deploy no Vercel
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
+A maneira mais fácil de implantar seu aplicativo Next.js é usar o [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) dos criadores do Next.js.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Confira  [Next.js deployment documentation](https://nextjs.org/docs/deployment) para mais detalhes.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Licença
+<a href="https://opensource.org/licenses/MIT">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-6E40C9?style=flat-square">
+</a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Feito com :purple_heart: by:
+[Cleby Francisco](https://github.com/ClebyFrancisco/),
+[Victoria Gabriella](https://github.com/srtakatsumi/),
+[Mateus Campos](https://github.com/MateusCampoSantos/),
+[Anderley Quinteiro](https://github.com/anderleyson/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
