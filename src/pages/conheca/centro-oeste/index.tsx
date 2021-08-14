@@ -36,7 +36,9 @@ const CentroOeste  = ({dados}:{dados:any}) => {
             <InfoRegioes 
             imagem={Perfil.src} 
             titulo="Conheça os encantos do Centro-Oeste" 
-            text="O turismo vem se desenvolvendo rapidamente na região Centro-Oeste do Brasil, atraindo visitantes de várias partes do mundo. A região mais conhecida é o Pantanal, no Mato Grosso e Mato Grosso do Sul. Trata-se da maior planície inundável do mundo e uma das maiores bacias de sedimentação do planeta. Outros pontos de interesse são as chapadas, como a dos Guimarães, em Mato Grosso, e a dos Veadeiros, em Goiás. Há ainda Brasília, no Distrito Federal, marco da arquitetura e urbanismo modernos."
+            text={dados.map((artigo:any) => (
+                <p key={artigo.conheca}>{artigo.conheca}</p>
+            ))}
             />
             <div className={styles.CapaRegioes}>
                 <CapaRegioes imagem={Regiao1.src} height="350" /> 
@@ -72,8 +74,9 @@ const CentroOeste  = ({dados}:{dados:any}) => {
             </div> 
             <TitleSection titulo="Cultura"  /> 
             <ArticleRegioes 
-                text="Um polo de influências, sendo berço de muitos artistas no meio musical e com eventos marcantes que revivem muito da história de nosso país. Essa região, por diversas influências de outros estados e outros países da america do sul, em sua mistura única nos rende arquiteturas, sotaques, costumes que só poderíamos ver aqui.
-                "
+                text={dados.map((artigo:any) => (
+                    <p key={artigo.cultura}>{artigo.cultura}</p>
+                ))}
                 imagem={Cultura2.src}   
             /> 
              <Article imagem={Regiao1.src} title={"Estados"}/>
