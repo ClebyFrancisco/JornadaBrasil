@@ -7,16 +7,41 @@
 }
 .ArticleRegioes{
     display: flex;
-    width: 100vw;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 1920px;
+    margin: 0px auto;
+    padding: 20px;
     .TextArticleRegioes{
-        width: 400px;
         color:black;
-        font-size: 14px;
+        font-size: 22px;
         margin-left: 20px;
         margin-right: 20px;
 
     }
     
 
+}
+
+@media (max-width: 450px) {
+    .ArticleRegioes{
+        display: block;
+        color: black;
+        .TextArticleRegioes{
+            p{
+                font-size: 14px;
+                margin: 10px auto;
+              
+            }
+
+        }
+        .cardImagem {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto;
+            border-radius: 10px;
+
+        }
+    }
+   
+    
 }

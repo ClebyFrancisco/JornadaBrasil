@@ -1,5 +1,6 @@
 import Layout from "../../../components/layout";
 import CapaRegioes from "../../../components/Regioes/CapaRegioes";
+import styles from "../../../styles/Regiao.module.scss";
 
 import BannerNorte from "../../../../public/images/Norte/banner.jpg";
 import PerfilNorte from "../../../../public/images/Norte/perfil.jpg";
@@ -43,8 +44,14 @@ const Norte  = () =>{
             exploração do turismo cresce a cada dia 
             com mais infra-estrutura para os turistas."
             />
-
-            {/* <CapaRegioes imagem={Regiao1Norte.src} height="350" />  
+            
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={Regiao1Norte.src} height="350" />
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={Regiao1Norte.src} height="250" />
+            </div>
+              
             <TitleSection titulo="Sobre a Região"  /> 
             <ArticleRegioes 
                 text="A Região Norte tem uma cultura muito rica,
@@ -57,8 +64,14 @@ const Norte  = () =>{
                  a cultura e toda a infraestrutura construída a partir 
                  de uma vida em conjunto com o meio."
                 imagem={Regiao2Norte.src}   
-            />  
-            <CapaRegioes imagem={CulinariaNorte.src} height="350" /> 
+            /> 
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={CulinariaNorte.src} height="350" />
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={CulinariaNorte.src} height="250" />
+            </div>
+            
             <TitleSection titulo="Culinária"  /> 
             <ArticleRegioes 
                 text="Além das belas paisagens e passeios turísticos
@@ -69,8 +82,13 @@ const Norte  = () =>{
                   por peixes, frutas e ervas para temperos, como por 
                   exemplo: Pato no tucupi, Gurijuba, Caruru, Tacacá..."
                 imagem={Culinaria2Norte.src}   
-            /> 
-            <CapaRegioes imagem={CulturaNorte.src} height="350" /> 
+            />
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={CulturaNorte.src} height="350" />
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={CulturaNorte.src} height="250" />
+            </div>
             <TitleSection titulo="Cultura"  /> 
             <ArticleRegioes 
                 text="Por ser uma região com uma população bastante 
@@ -92,7 +110,7 @@ const Norte  = () =>{
                  <Estados imagem={Tocantins.src} title="Tocantins"/>
                  
                  
-             </ContainerEstado> */}
+             </ContainerEstado>
             
         </Layout>
   )

@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../../../components/layout";
 import CapaRegioes from "../../../components/Regioes/CapaRegioes";
+import styles from "../../../styles/Regiao.module.scss";
 
 
 import Banner from "../../../../public/images/Sul/banner.jpg";
@@ -39,22 +40,39 @@ const Sul  = () =>{
             Aqui nos aproximamos um pouco mais da europa sem perder a nossa brasilidade.
             "
             />
-
-            <CapaRegioes imagem={Regiao1.src} height="350" />  
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={Regiao1.src} height="350" />
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={Regiao1.src} height="250" />
+            </div>
+              
             <TitleSection titulo="Sobre a Região"  /> 
             <ArticleRegioes 
                 text="Arquitetura tipicamente europeia, além da arquitetura, os imigrantes do velho continente contribuíram na cultura, sendo os Alemães, Holandeses, Espanhóis, Italianos, dentre outros, os grandes responsáveis por isso. Florestas de pinheiros que vemos nos filmes, clima frio com geadas e com uma ótima infraestrutura, esse o Sul.
                 "
                 imagem={Regiao2.src}   
-            />  
-            <CapaRegioes imagem={Culinaria.src} height="350" /> 
+            /> 
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={Culinaria.src} height="350" />
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={Culinaria.src} height="250" />
+            </div> 
+            
             <TitleSection titulo="Culinária"  /> 
             <ArticleRegioes 
                 text="Você vai encontrar muita carne por aqui. A Região Sul possui uma culinária repleta de pratos quentes para harmonizar com o clima frio e que, como em outras regiões do Brasil, agrega referências de muitas culturas. Tanto os povos indígenas quanto os colonizadores europeus e os escravos africanos marcaram fortemente os hábitos alimentares dos estados do Sul do País, e é por isso que Paraná, Santa Catarina e Rio Grande do Sul têm pratos tão característicos.
                 "
                 imagem={Culinaria2.src}   
-            /> 
-            <CapaRegioes imagem={Cultura.src} height="350" /> 
+            />
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={Cultura.src} height="350" />
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={Cultura.src} height="250" />
+            </div>  
+            
             <TitleSection titulo="Cultura"  /> 
             <ArticleRegioes 
                 text="O Sul do Brasil dissemina sua cultura remetendo ao nativismo, ao regionalismo e ao folclore. Há festas típicas de lá que vem de suas influencias europeias, algumas fortemente tradicionais e mantendo suas raízes, outras que se adaptaram ao longo dos anos e criaram seu próprio jeitinho Brasileiro.

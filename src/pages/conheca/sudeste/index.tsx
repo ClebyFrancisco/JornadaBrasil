@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../../../components/layout";
 import CapaRegioes from "../../../components/Regioes/CapaRegioes";
+import styles from "../../../styles/Regiao.module.scss";
 
 
 import Banner from "../../../../public/images/Sudeste/banner.jpg";
@@ -39,21 +40,40 @@ const Sudeste  = () =>{
             "
             />
 
-            <CapaRegioes imagem={Regiao1.src} height="350" />  
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={Regiao1.src} height="350" />
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={Regiao1.src} height="250" />
+            </div>
+              
             <TitleSection titulo="Sobre a Região"  /> 
             <ArticleRegioes 
                 text="Com a forte migração ocorrida para o Sudeste nos séculos passados, as manifestações culturais presentes nessa região possuem influência indígena, negra e europeia, além da influência asiática. Hisória cultural riquíssima e com muitas oportunidades de programação, desde a mais histórica a mais tecnológica e atual.
                 "
                 imagem={Regiao2.src}   
             />  
-            <CapaRegioes imagem={Culinaria.src} height="350" /> 
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={Culinaria.src} height="350" />
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={Culinaria.src} height="250" />
+            </div>
+             
             <TitleSection titulo="Culinária"  /> 
             <ArticleRegioes 
                 text="Sendo o berço da mundialmente conhecida: Feijoada, a região também oferece uma rica variedade de queijos, pizzas (dado o fato de uma de suas cidades ser a segunda no mundo em consumo de pizza), moquecas e todo tipo de pratos com peixe. A gastronomia da região sudeste é bastante rica. Além dos pratos acima, ainda encontramos: Angu, Bolinho de bacalhau, Bolo de fubá, Feijão tropeiro, Pirão, Virado à paulista, Tutu de feijão...
                 "
                 imagem={Culinaria2.src}   
             /> 
-            <CapaRegioes imagem={Cultura.src} height="350" /> 
+
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={Cultura.src} height="350" />
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={Cultura.src} height="250" />
+            </div>
+             
             <TitleSection titulo="Cultura"  /> 
             <ArticleRegioes 
                 text="Sendo considerada a região brasileira mais desenvolvida econômica e industrialmente, já é possível imaginar o quão urbanizado é esse território.

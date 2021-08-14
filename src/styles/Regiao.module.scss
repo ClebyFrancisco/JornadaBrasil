@@ -1,0 +1,14 @@
+
+.CapaRegioesMobile{
+    display: none;
+
+}
+@media (max-width: 450px) {
+    .CapaRegioes{
+        display: none;
+    }
+    .CapaRegioesMobile{
+        display: block;
+    }
+    
+}

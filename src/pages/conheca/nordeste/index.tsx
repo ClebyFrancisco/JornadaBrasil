@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../../../components/layout";
 import CapaRegioes from "../../../components/Regioes/CapaRegioes";
+import styles from "../../../styles/Regiao.module.scss";
 
 
 import Banner from "../../../../public/images/Nordeste/banner.jpg";
@@ -46,8 +47,13 @@ const Nordeste  = () =>{
                de determinado grupo e isso o Nordeste 
                tem de sobra!"
             />
-
-            <CapaRegioes imagem={Regiao1.src} height="350" />  
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={Regiao1.src} height="350" /> 
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={Regiao1.src} height="250" />
+            </div>
+             
             <TitleSection titulo="Sobre a Região"  /> 
             <ArticleRegioes 
                 text="Existe uma ideia a respeito do Nordeste que
@@ -61,7 +67,13 @@ const Nordeste  = () =>{
                  importâncias."
                 imagem={Regiao2.src}   
             />  
-            <CapaRegioes imagem={Culinaria.src} height="350" /> 
+           <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={Culinaria.src} height="350" /> 
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+            <CapaRegioes imagem={Culinaria.src} height="250" />
+            </div>
+             
             <TitleSection titulo="Culinária"  /> 
             <ArticleRegioes 
                 text="A culinária nordestina foi desenvolvida sob a influência da comida portuguesa, africana e indígena.
@@ -69,7 +81,15 @@ const Nordeste  = () =>{
                 São exemplos de raízes: macaxeira, inhame, batata doce. Quanto às comidas bem temperadas podemos citar: acarajé, vatapá, bobó de camarão, moqueca de peixe, sururu."
                 imagem={Culinaria2.src}   
             /> 
-            <CapaRegioes imagem={Cultura.src} height="350" /> 
+
+            <div className={styles.CapaRegioes}>
+                <CapaRegioes imagem={Cultura.src} height="350" />
+            </div>
+            <div className={styles.CapaRegioesMobile}>
+                <CapaRegioes imagem={Cultura.src} height="250" />
+            </div>
+
+             
             <TitleSection titulo="Cultura"  /> 
             <ArticleRegioes 
                 text="A cultura do Nordeste brasileiro desenvolveu hábitos próprios com relação ao mundo e às manifestações culturais, sendo as que mais se destacam na região: festas juninas, Reisado, poesia popular, artesanato, capoeira, frevo, culinária e religiões afro-brasileiras."
